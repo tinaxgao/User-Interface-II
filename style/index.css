@@ -74,6 +74,8 @@ h2 {
 nav {
     display:flex;
     justify-content: center;
+    text-align: center;
+    
 }
 
 nav a{
@@ -89,6 +91,15 @@ nav a:hover {
     border: 1px black solid;
     border-radius: 30px;
     color: black;
+}
+
+@media (max-width: 500px) {
+    nav {
+        flex-direction:column;
+        width: 50%;
+        margin: auto;
+
+    }
 }
 
 /*INTRO SECTION*/

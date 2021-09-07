@@ -120,7 +120,7 @@ nav a:hover {
 
 /*HERO IMAGE*/
 .hero {
-    width: 100%;
+    min-width: 100%;
     height: 50vh;
     background-image: url("https://tinagao.com/wp-content/uploads/2020/10/built-sukkah-combined-s.png");
     background-position: center;
@@ -136,9 +136,29 @@ nav a:hover {
 
 .thumb{
     padding: 1%;
-    width: 20%;
+    min-width: 20%;
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 800px) {
+    .home-gallery {
+        flex-wrap: wrap;
+    }
+    .home-gallery>* {
+        width: 50%;
+        flex: 1 1 auto;
+    }
+    .thumb.text {
+        justify-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .home-gallery>* {
+        width: 100%;
+        flex: 1 1 auto;
+    }
 }
 
 /*FOOTER*/

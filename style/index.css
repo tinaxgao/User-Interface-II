@@ -150,9 +150,12 @@ nav a:hover {
         flex: 1 1 auto;
     }
     .thumb.text {
-        justify-items: center;
+        margin: auto;
+        text-align: center;
+        padding: 12% 0 12%;
     }
 }
+
 
 @media (max-width: 500px) {
     .home-gallery>* {
